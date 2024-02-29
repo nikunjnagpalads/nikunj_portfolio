@@ -1,0 +1,102 @@
+.bodyContainer {
+  margin-top: 5vh;
+  padding: 5vw;
+  max-height: 95vh;
+  overflow: hidden;
+}
+.bigCircle {
+  height: 55vh;
+  width: 65vh;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.bigCircle span {
+  display: block;
+  height: 85vh;
+  width: 85vh;
+  background-color: #ff015e;
+  border-radius: 50%;
+  opacity: 0.15;
+}
+.smallerCircle {
+  position: absolute;
+  top: 20vh;
+  left: -3vh;
+}
+.smallerCircle span{
+    display: block;
+    height: 32vh;
+    width: 32vh;
+    background-color: #004fa1;
+    border-radius: 50%;
+    opacity: 0.15;
+}
+.bodyContainer .content {
+  padding: 5vw;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.content .profileImage {
+  height: 30vh;
+  width: 30vh;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.content h1 {
+  font-weight: 900;
+  font-family: "Abril Fatface", serif;
+  font-size: 5vh;
+  margin: 3vh 0 1vh;
+}
+.content h3 {
+  font-size: 2.5vh;
+  line-height: 3vh;
+  position: relative;
+  text-align: center;
+  font-weight: 400;
+  margin-top: 10px;
+  max-width: 85%;
+}
+
+@media (max-width: 1024px) {
+  .bodyContainer {
+    margin-top: 50px;
+  }
+  .bodyContainer .content {
+    padding: 5vw 1vw;
+}
+.content .profileImage {
+  height: 28vh;
+  width: 28vh;
+}
+.content h1 {
+  font-weight: 400;
+}
+.content h3 {
+  font-size: 15px;
+  letter-spacing: 0px;
+  line-height: 19px;
+  /* left: -1px; */
+  /* position: relative; */
+  font-weight: 400;
+}
+.bigCircle span {
+  opacity: 0.1;
+}
+.smallerCircle span{
+    opacity: 0.1;
+}
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+}
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+  
+}
